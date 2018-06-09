@@ -1,0 +1,20 @@
+﻿BakeshoppeInventorySystem
+
+
+winexe
+C#
+.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\
+BakeshoppeInventorySystem
+none
+false
+DEBUG;TRACE
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\App.xaml
+101432007698
+1-1402921744
+54-1811295638
+73534488052
+Resources\BakeshoppeResourceDictionary.xaml;MainWindow.xaml;Views\Network\LoadTransactionWindow.xaml;Views\Network\AddNewNetworkWindow.xaml;Views\Network\ListNetworkUserControl.xaml;Views\Network\LoadTransactionUserControl.xaml;Views\Sales\ListSalesUserControl.xaml;Views\Stocks\AddNewIngredientWindow.xaml;Views\Stocks\AddNewProductWindow.xaml;Views\Stocks\ListStocksUserControl.xaml;
+
+False
+

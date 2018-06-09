@@ -1,0 +1,66 @@
+c:\users\admin\documents\visual studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\BakeshoppeInventorySystem.exe.config
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem.csprojAssemblyReference.cache
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\MainWindow.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Sales\ListStocksUserControl.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\App.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem_Content.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem_MarkupCompile.cache
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem_MarkupCompile.lref
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Sales\ListSalesUserControl.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\ListStocksUserControl.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\AddNewLoadTransactionWindow.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\AddNewNetworkWindow.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\ListNetworkUserControl.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\LoadTransactionUserControl.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\AddNewIngredientWindow.g.cs
+C:\Users\mikae\Downloads\BakeryInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\AddNewProductWindow.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\BakeshoppeInventorySystem.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\MainWindow.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\AddNewNetworkWindow.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\ListNetworkUserControl.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\LoadTransactionUserControl.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Sales\ListSalesUserControl.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\AddNewIngredientWindow.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\AddNewProductWindow.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\ListStocksUserControl.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\App.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem_Content.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem_MarkupCompile.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem_MarkupCompile.lref
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\BakeshoppeInventorySystem.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\BakeshoppeInventorySystem.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\CommonServiceLocator.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\EntityFramework.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\EntityFramework.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\App.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\MainWindow.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\AddNewNetworkWindow.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\ListNetworkUserControl.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\LoadTransactionUserControl.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Sales\ListSalesUserControl.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\AddNewIngredientWindow.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\AddNewProductWindow.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Stocks\ListStocksUserControl.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem.g.resources
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem.Properties.Resources.resources
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\BakeshoppeInventorySystem.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Resources\BakeshoppeResourceDictionary.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\LoadTransactionWindow.g.cs
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\LoadTransactionWindow.baml
