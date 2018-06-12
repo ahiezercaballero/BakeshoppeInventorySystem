@@ -32,7 +32,7 @@ namespace BakeshoppeInventorySystem.Modules
             _repository = repository;
             LoadNetworks();
         }
-
+        //Try nako if mugana jud ni
         #region Properties
 
         public ObservableCollection<NetworkModel> NetworkList { get; } =  new ObservableCollection<NetworkModel>();
