@@ -36,11 +36,20 @@
                 HorizontalAlignment="Left"
                 Style="{StaticResource subHeader}"
                 Text="ACTIVITY HISTORY" />
-            <Button
+            <StackPanel
+                Name="SyncTextBlock"
                 Grid.Column="1"
                 HorizontalAlignment="Right"
-                Command="{Binding Path=RefreshCommand}"
-                Content="Refresh" />
+                Orientation="Horizontal">
+                <TextBlock
+                    Foreground="Red"
+                    Text="{Binding Path=NetworkModule.TextSync, UpdateSourceTrigger=PropertyChanged, Source={StaticResource Locator}}"
+                    Visibility="{Binding Path=NetworkModule.TextSync, Converter={StaticResource BooleanToVisibilityConverter}, ConverterParameter=true, UpdateSourceTrigger=PropertyChanged, Source={StaticResource Locator}}" />
+                <Button
+                    HorizontalAlignment="Right"
+                    Command="{Binding Path=RefreshCommand}"
+                    Content="Refresh" />
+            </StackPanel>
         </Grid>
         <DataGrid
             Grid.Row="1"
@@ -71,7 +80,8 @@
             <DataGrid.ContextMenu>
                 <ContextMenu>
                     <MenuItem Command="{Binding Path=FilterByLoadCommand}" Header="Filter by Load" />
-                    <MenuItem Command="{Binding Path=FilterByReloadCommand}" Header="Filter Reload" />
+                    <MenuItem Command="{Binding Path=FilterByReloadCommand}" Header="Filter by Reload" />
+                    <MenuItem Command="{Binding Path=FilterByAllCommand}" Header="Filter by All" />
                 </ContextMenu>
             </DataGrid.ContextMenu>
         </DataGrid>

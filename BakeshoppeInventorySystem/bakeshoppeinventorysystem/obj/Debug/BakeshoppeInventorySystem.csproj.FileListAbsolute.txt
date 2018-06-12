@@ -64,3 +64,5 @@ C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\B
 C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Resources\BakeshoppeResourceDictionary.baml
 C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\LoadTransactionWindow.g.cs
 C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Views\Network\LoadTransactionWindow.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\ValueConverters\Converters.baml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\Resources\Icons.baml

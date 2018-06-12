@@ -58,18 +58,21 @@ namespace BakeshoppeInventorySystem.EditModels
             get { return _ModelCopy.FeePerTransaction; }
             set
             {
-                double? tmp = value;
-                string toStringValue = Convert.ToString(tmp);
-                double? newValue = ValidateInputAndAddErrors(ref tmp, value, nameof(FeePerTransaction),
-                    () =>
-                    {
-                        double x;
-                        var result = double.TryParse(toStringValue, out x);
-                        return !result;
-                    }, "This field is required.");
-                _ModelCopy.FeePerTransaction = newValue;
+                //double? tmp = value;
+                //string toStringValue = Convert.ToString(tmp);
+                //double? newValue = ValidateInputAndAddErrors(ref tmp, value, nameof(FeePerTransaction),
+                //    () =>
+                //    {
+                //        double x;
+                //        var result = double.TryParse(toStringValue, out x);
+                //        return !result;
+                //    }, "This field is required.");
+                //_ModelCopy.FeePerTransaction = newValue;
+                _ModelCopy.FeePerTransaction = value;
+                RaisePropertyChanged(nameof(FeePerTransaction));
             }
         }
+
         private Network CreateCopy(Network model)
         {
             var copy = new Network

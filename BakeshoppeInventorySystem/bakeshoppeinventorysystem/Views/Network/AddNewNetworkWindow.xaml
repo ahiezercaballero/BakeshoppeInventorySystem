@@ -53,7 +53,7 @@
         <TextBox
             Grid.Row="2"
             Grid.Column="1"
-            Text="{Binding Path=FeePerTransaction, UpdateSourceTrigger=PropertyChanged}" />
+            Text="{Binding Path=NetworkModule.FeeTextBox, UpdateSourceTrigger=PropertyChanged, Source={StaticResource Locator}}" />
         <StackPanel
             Grid.Row="3"
             Grid.Column="0"

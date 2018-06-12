@@ -36,9 +36,9 @@
                 Grid.Column="1"
                 HorizontalAlignment="Right"
                 Orientation="Horizontal">
-                <Button Command="{Binding Path=AddNetworkWindow}" Content="A" />
+                <Button Command="{Binding Path=AddNetworkWindow}" Content="Add" />
                 <!--  change this to icon - Add  -->
-                <Button Command="{Binding Path=DeleteNetworkCommand}" Content="D" />
+                <Button Command="{Binding Path=DeleteNetworkCommand}" Content="Delete" />
                 <!--  change this to icon - Delete  -->
             </StackPanel>
         </Grid>

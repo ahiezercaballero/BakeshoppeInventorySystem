@@ -142,7 +142,9 @@ namespace BakeshoppeInventorySystem.Modules
 
         public ICommand FilterByReloadCommand => new RelayCommand(FilterByReloadProc);
 
-        public ICommand RefreshCommand => new RelayCommand(RefreshProc);
+        public ICommand RefreshCommand => new RelayCommand(RefreshProc, RefreshCondition);
+
+        public ICommand FilterByAllCommand => new RelayCommand(FilterByAllProc);
 
         #endregion
 
@@ -215,11 +217,38 @@ namespace BakeshoppeInventorySystem.Modules
 
         private void RefreshProc()
         {
+            ViewModelLocator.ViewModelLocatorStatic.Locator.NetworkModule.TextSync = null;
+            ViewModelLocator.ViewModelLocatorStatic.Locator.NetworkModule.InitializeFields();
             _loadTranscationUserControl = new LoadTransactionUserControl();
             LoadNetwork();
             _loadTranscationUserControl.NetworkComboBox.SelectedIndex = 0;
             MessageBox.Show("Your list has been updated.");
         }
+
+        private void FilterByAllProc()
+        {
+            var viewSailorList = CollectionViewSource.GetDefaultView(LoadTransactionList);
+            viewSailorList.Filter =
+                obj =>
+                    ((LoadTransactionModel)obj).Model.LoadProfileId.HasValue;
+        }
+        #endregion
+
+        #region COndition
+
+        private bool RefreshCondition()
+        {
+            if (ViewModelLocator.ViewModelLocatorStatic.Locator.NetworkModule.TextSync != null)
+            {
+                int x = Convert.ToInt32(ViewModelLocator.ViewModelLocatorStatic.Locator.NetworkModule.TextSync[0]);
+                bool condition = x > 0;
+                return condition;
+
+            }
+            return false;
+
+        }
+
         #endregion
 
     }

@@ -22,7 +22,10 @@ namespace BakeshoppeInventorySystem.Modules
         private NetworkModel _selectedNetworkModel;
         private AddNewNetworkWindow _addNewNetworkWindow;
         private NewNetworkModel _newNetwork;
-        private LoadTransactionModule _loadLoadTransaction;
+        private int count = 0;
+        private string _textSync;
+        private string _feeTextbox;
+
 
         public NetworkModule(IRepository repository)
         {
@@ -70,6 +73,26 @@ namespace BakeshoppeInventorySystem.Modules
             }
         }
 
+        public string TextSync
+        {
+            get { return _textSync; }
+            set
+            {
+                _textSync = value;
+                RaisePropertyChanged(nameof(TextSync));
+            }
+        }
+
+        public string FeeTextBox
+        {
+            get { return _feeTextbox; }
+            set
+            {
+                _feeTextbox = value;
+                RaisePropertyChanged(nameof(FeeTextBox));
+            }
+        }
+
         #endregion
 
         #region Methods
@@ -83,28 +106,39 @@ namespace BakeshoppeInventorySystem.Modules
             }
         }
 
+        public void InitializeFields()
+        {
+            count = 0;
+        }
         #endregion
 
         #region Commands
 
         public ICommand AddNetworkWindow => new RelayCommand(AddNetworkWindowProc);
-        public ICommand SaveAddNetworkCommand => new RelayCommand(SaveAddNetworkProc);
+        public ICommand SaveAddNetworkCommand => new RelayCommand(SaveAddNetworkProc, SaveAddNetworkCondition);
+
         public ICommand CancelAddNetworkCommand => new RelayCommand(CancelAddNetwork);
 
         public ICommand DeleteNetworkCommand => new RelayCommand(DeleteNetworkProc);
 
         private void DeleteNetworkProc()
         {
+            if (SelectedNetworkModel == null) MessageBox.Show("Please select a network.");
             if (SelectedNetworkModel != null)
             {
+
                 try
                 {
+                    
                     var x = MessageBox.Show("Are you sure to delete " + SelectedNetworkModel.Model.Name + "? Doing so, will delete all its dependencies as well", "Delete", MessageBoxButton.OKCancel);
                     if (x == MessageBoxResult.OK && SelectedNetworkModel.Model != null)
                     {
                         _repository.Networks.Remove(SelectedNetworkModel.Model);
                         NetworkList.Remove(SelectedNetworkModel);
+                        count++;
+                        TextSync = count + " unsynced item(s)";
                     }
+                    
                 }
                 catch (Exception e)
                 {
@@ -121,11 +155,12 @@ namespace BakeshoppeInventorySystem.Modules
 
         #endregion
 
-        #region Proc
+        #region Procs
 
         private void AddNetworkWindowProc()
         {
             NewNetwork = new NewNetworkModel();
+            _feeTextbox = "0";
             _addNewNetworkWindow = new AddNewNetworkWindow();
             _addNewNetworkWindow.Owner = Application.Current.MainWindow;
             _addNewNetworkWindow.ShowDialog();
@@ -136,10 +171,17 @@ namespace BakeshoppeInventorySystem.Modules
             if (NewNetwork == null) return;
             if (!NewNetwork.HasChanges) return;
             if (NetworkList.Any(a => a.Model.Name.ToUpper() == NewNetwork.ModelCopy.Name.ToUpper())) { MessageBox.Show("The network has already been listed"); return; }
-            
-
+            double x;
+            var result = double.TryParse(FeeTextBox, out x);
+            if (!result)
+            {
+                MessageBox.Show("Invalid input for Fee per transaction");
+                return;
+            }
             try
             {
+                count++;
+                TextSync = count + " unsynced item(s)";
                 NewNetwork.ModelCopy.Name = NewNetwork.ModelCopy.Name.ToUpper();
                 _repository.Networks.Add(NewNetwork.ModelCopy);
                 NetworkList.Add(new NetworkModel(NewNetwork.ModelCopy, _repository));
@@ -151,6 +193,16 @@ namespace BakeshoppeInventorySystem.Modules
             {
                 MessageBox.Show("An error occurred during save. Error: " + e, "Network");
             }
+           
+        }
+
+        #endregion
+
+        #region Conditions
+
+        private bool SaveAddNetworkCondition()
+        {
+            return (NewNetwork.HasChanges && !NewNetwork.HasErrors) && (NewNetwork != null);
         }
 
         #endregion
