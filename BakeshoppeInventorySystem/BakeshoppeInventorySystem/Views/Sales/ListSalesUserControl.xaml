@@ -25,32 +25,42 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0"
-                Grid.ColumnSpan="3"
-                Style="{StaticResource header}"
-                Text="SALES" />
-
-
-        <Grid Grid.Row="1" Grid.ColumnSpan="3">
+        <Grid Grid.Row="0"
+              Grid.ColumnSpan="2"
+              Margin="0 0 0 15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition />
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <StackPanel
-                Grid.Column="0"
-                Orientation="Horizontal">
-                <TextBox Style="{StaticResource search}" Text="Search" />
-                <Button Content="C" />
-                <!--  This is a calendar. Replace this with a calendar icon  -->
+            <TextBlock Text="SALES"
+                   Grid.Column="0"
+                   Style="{StaticResource header}"/>
+            <StackPanel Grid.Column="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <TextBox Text="Search"
+                         Style="{StaticResource search}"/>
+                <Button Content="C"/> <!--This is a calendar. Replace this with a calendar icon-->
             </StackPanel>
-            <ComboBox Grid.Column="1" 
+        </Grid>
+
+
+        <Grid Grid.Row="1"
+              Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Grid.Column="0"
                       Style="{StaticResource mainSelectionCombobox}">
                 <ComboBoxItem IsSelected="True">ALL</ComboBoxItem>
             </ComboBox>
-            <Button Grid.Column="2" 
-                    Content="Save Initial" Style="{StaticResource saveInitial}" />
-
+            <StackPanel Grid.Column="1" 
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Button Content="Save Initial"
+                        Style="{StaticResource saveInitial}"/>
+            </StackPanel>
         </Grid>
 
         <DataGrid Grid.Row="2"

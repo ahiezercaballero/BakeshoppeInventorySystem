@@ -93,15 +93,8 @@ namespace BakeshoppeInventorySystem.EditModels
             get { return _ModelCopy.LoadAmount; }
             set
             {
-                int? tmp = value;
-                int? newValue = ValidateInputAndAddErrors(ref tmp, value, nameof(LoadAmount),
-                    () =>
-                    {
-                        int x;
-                        var result = int.TryParse(Convert.ToString(tmp), out x);
-                        return !result;
-                    }, "This field is required.");
-                _ModelCopy.LoadAmount = newValue;
+                _ModelCopy.LoadAmount = value;
+                RaisePropertyChanged(nameof(LoadAmount));
             }
         }
 

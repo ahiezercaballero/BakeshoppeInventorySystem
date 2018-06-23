@@ -157,7 +157,7 @@
             <TextBox
                 Grid.Row="3"
                 Grid.Column="1"
-                Text="{Binding Path=LoadTransactionModule.NewLoadTransaction.LoadAmount, Source={StaticResource Locator}, UpdateSourceTrigger=PropertyChanged}" />
+                Text="{Binding Path=LoadTransactionModule.TextBoxAmount, Source={StaticResource Locator}, UpdateSourceTrigger=PropertyChanged}" />
             <Grid Grid.Row="4" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />

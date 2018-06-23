@@ -48,16 +48,19 @@ namespace BakeshoppeInventorySystem.Modules
             {
                 
                 _selectedNetworkModel = value;
-                if(_selectedNetworkModel != null) { 
-                try
-                {
-                    _selectedNetworkModel.EditModel?.Dispose();
-                }
-                catch (ArgumentNullException e)
-                {
-                    MessageBox.Show("Error in Null Exception" + e, "SelectedModel");
-                }
-                _selectedNetworkModel.EditModel = new NetworkEditModel(SelectedNetworkModel.Model);
+                if(_selectedNetworkModel != null)
+                { 
+                    try
+                    {
+                        _selectedNetworkModel.EditModel?.Dispose();
+                    }
+                    catch (ArgumentNullException e)
+                    {
+                        MessageBox.Show("Error in Null Exception" + e, "SelectedModel");
+                    }
+                    _selectedNetworkModel.EditModel = new NetworkEditModel(SelectedNetworkModel.Model);
+                    _selectedNetworkModel.TextBoxFeePerTransaction = Convert.ToString(_selectedNetworkModel.EditModel.ModelCopy.FeePerTransaction);
+                
                 }
                 RaisePropertyChanged(nameof(SelectedNetworkModel));
             }
@@ -121,37 +124,7 @@ namespace BakeshoppeInventorySystem.Modules
 
         public ICommand DeleteNetworkCommand => new RelayCommand(DeleteNetworkProc);
 
-        private void DeleteNetworkProc()
-        {
-            if (SelectedNetworkModel == null) MessageBox.Show("Please select a network.");
-            if (SelectedNetworkModel != null)
-            {
-
-                try
-                {
-                    
-                    var x = MessageBox.Show("Are you sure to delete " + SelectedNetworkModel.Model.Name + "? Doing so, will delete all its dependencies as well", "Delete", MessageBoxButton.OKCancel);
-                    if (x == MessageBoxResult.OK && SelectedNetworkModel.Model != null)
-                    {
-                        _repository.Networks.Remove(SelectedNetworkModel.Model);
-                        NetworkList.Remove(SelectedNetworkModel);
-                        count++;
-                        TextSync = count + " unsynced item(s)";
-                    }
-                    
-                }
-                catch (Exception e)
-                {
-                    MessageBox.Show("Unable to delete " + SelectedNetworkModel.Model.Name + ".");
-                }
-            }
-        }
-
-        private void CancelAddNetwork()
-        {
-            NewNetwork?.Dispose();
-            _addNewNetworkWindow.Close();
-        }
+        
 
         #endregion
 
@@ -170,12 +143,17 @@ namespace BakeshoppeInventorySystem.Modules
         {
             if (NewNetwork == null) return;
             if (!NewNetwork.HasChanges) return;
+            if (string.IsNullOrWhiteSpace(NewNetwork.Name))
+            {
+                MessageBox.Show("Invalid input for Name field.");
+                return;
+            }
             if (NetworkList.Any(a => a.Model.Name.ToUpper() == NewNetwork.ModelCopy.Name.ToUpper())) { MessageBox.Show("The network has already been listed"); return; }
             double x;
             var result = double.TryParse(FeeTextBox, out x);
             if (!result)
             {
-                MessageBox.Show("Invalid input for Fee per transaction");
+                MessageBox.Show("Invalid input for Fee per transaction field.");
                 return;
             }
             try
@@ -183,7 +161,7 @@ namespace BakeshoppeInventorySystem.Modules
                 count++;
                 TextSync = count + " unsynced item(s)";
                 NewNetwork.ModelCopy.Name = NewNetwork.ModelCopy.Name.ToUpper();
-                _repository.Networks.Add(NewNetwork.ModelCopy);
+                //_repository.Networks.Add(NewNetwork.ModelCopy);
                 NetworkList.Add(new NetworkModel(NewNetwork.ModelCopy, _repository));
                 MessageBox.Show("You have successfully created a new network.");
                 _addNewNetworkWindow.Close();
@@ -194,6 +172,38 @@ namespace BakeshoppeInventorySystem.Modules
                 MessageBox.Show("An error occurred during save. Error: " + e, "Network");
             }
            
+        }
+
+        private void DeleteNetworkProc()
+        {
+            if (SelectedNetworkModel == null) MessageBox.Show("Please select a network.");
+            if (SelectedNetworkModel != null)
+            {
+
+                try
+                {
+
+                    var x = MessageBox.Show("Are you sure to delete " + SelectedNetworkModel.Model.Name + "? Doing so, will delete all its dependencies as well", "Delete", MessageBoxButton.OKCancel);
+                    if (x == MessageBoxResult.OK && SelectedNetworkModel.Model != null)
+                    {
+                        _repository.Networks.Remove(SelectedNetworkModel.Model);
+                        NetworkList.Remove(SelectedNetworkModel);
+                        count++;
+                        TextSync = count + " unsynced item(s)";
+                    }
+
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Unable to delete " + SelectedNetworkModel.Model.Name + ".");
+                }
+            }
+        }
+
+        private void CancelAddNetwork()
+        {
+            NewNetwork?.Dispose();
+            _addNewNetworkWindow.Close();
         }
 
         #endregion

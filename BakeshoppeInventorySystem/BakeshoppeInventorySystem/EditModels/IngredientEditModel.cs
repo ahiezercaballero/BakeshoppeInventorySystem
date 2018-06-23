@@ -3,15 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections.ObjectModel;
-using BakeshoppeInventorySystem.Models;
-using GalaSoft.MvvmLight;
-using System.Windows;
-using System.Windows.Input;
-using BakeshoppeInventorySystem.DataAccess;
-using BakeshoppeInventorySystem.EditModels;
-using BakeshoppeInventorySystem.Modules;
-using GalaSoft.MvvmLight.CommandWpf;
 using BakeshoppeInventorySystem.DataAccess.EF;
 using BakeshoppeInventorySystem.Models.Editable;
 
@@ -68,18 +59,13 @@ namespace BakeshoppeInventorySystem.EditModels
             }
         }
 
-        //public Unit Unit
-        //{
-        //    get { return ViewModelLocator.ViewModelLocatorStatic.Locator.UnitModule.UnitList(); }
-        //}
-
         private Ingredient CreateCopy(Ingredient model)
         {
             var copy = new Ingredient
             {
-                IngredientId = model.IngredientId,
-                Name = model.Name,
-                UnitId = model.UnitId
+                IngredientId = _ModelCopy.IngredientId,
+                Name = _ModelCopy.Name,
+                UnitId = _ModelCopy.UnitId
             };
             return copy;
         }

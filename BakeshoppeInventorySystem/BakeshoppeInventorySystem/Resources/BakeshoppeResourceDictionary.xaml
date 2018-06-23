@@ -8,18 +8,13 @@
     <!--  COMBOBOX  -->
     <Style TargetType="ComboBox">
         <Setter Property="Padding" Value="5" />
-        <Setter Property="Width" Value="150" />
-        <Setter Property="Margin" Value="0,5" />
         <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="HorizontalAlignment" Value="Left" />
-        
     </Style>
 
     <Style x:Key="mainSelectionCombobox" TargetType="ComboBox">
-        <Setter Property="Width" Value="100" />
+        <Setter Property="Width" Value="150" />
         <Setter Property="Padding" Value="5" />
         <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="Margin" Value="10,0"/>
     </Style>
     <Style TargetType="ComboBoxItem">
         <Setter Property="Padding" Value="5" />
@@ -39,7 +34,7 @@
     <!--  search  -->
     <Style x:Key="search" TargetType="TextBox">
         <Setter Property="BorderBrush" Value="Gray" />
-        <Setter Property="Width" Value="130" />
+        <Setter Property="Width" Value="180" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Padding" Value="5" />
         <Setter Property="FontStyle" Value="Italic" />
@@ -64,7 +59,6 @@
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="FontSize" Value="25" />
         <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="Margin" Value="0,0,0,15"/>
     </Style>
     <!--  subHeader  -->
     <Style x:Key="subHeader" TargetType="TextBlock">
@@ -97,7 +91,6 @@
         <Setter Property="Margin" Value="4,0,0,0" />
         <Setter Property="Background" Value="LightBlue" />
         <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="HorizontalAlignment" Value="Right" />
 
     </Style>
 

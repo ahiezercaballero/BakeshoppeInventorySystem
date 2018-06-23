@@ -26,6 +26,7 @@ namespace BakeshoppeInventorySystem.Modules
         private AddNewNetworkWindow _addNewNetworkWindow;
         private LoadTransactionUserControl _loadTranscationUserControl;
         private int? _currentBalance;
+        private string _textBoxAmount;
 
         public LoadTransactionModule(IRepository repository)
         {
@@ -100,6 +101,16 @@ namespace BakeshoppeInventorySystem.Modules
                 RaisePropertyChanged(nameof(CurrentBalance));
             }
         }
+
+        public string TextBoxAmount
+        {
+            get { return _textBoxAmount; }
+            set
+            {
+                _textBoxAmount = value;
+                RaisePropertyChanged(nameof(TextBoxAmount));
+            }
+        }
         #endregion
 
         #region Methods
@@ -132,6 +143,12 @@ namespace BakeshoppeInventorySystem.Modules
 
         }
 
+        private bool CheckIfNumber()
+        {
+            double x;
+            var result = double.TryParse(TextBoxAmount, out x);
+            return !result;
+        }
         #endregion
 
         #region Commands
@@ -156,6 +173,13 @@ namespace BakeshoppeInventorySystem.Modules
             //NewLoadTransaction = new NewLoadTransactionModel();
             if (NewLoadTransaction == null) return;
             if (!NewLoadTransaction.HasChanges) return;
+            
+            if (CheckIfNumber() || (NewLoadTransaction.ModelCopy.LoadAmount <= 0))
+            {
+                MessageBox.Show("Invalid input for Amount field.", "Error", MessageBoxButton.OK);
+                return;
+            }
+            NewLoadTransaction.ModelCopy.LoadAmount = Convert.ToInt32(TextBoxAmount);
             if (LoadTransactionList.Count > 0) NewLoadTransaction.ModelCopy.AmountBeginning = LoadTransactionList[LoadTransactionList.Count - 1].Model.CurrentBalance; 
             if ((IsCheckedLoad == false) && (IsCheckedReLoad == false))
             {
@@ -164,8 +188,7 @@ namespace BakeshoppeInventorySystem.Modules
             }
             if (IsCheckedLoad) // Load
             {
-                if ((NewLoadTransaction.ModelCopy.AmountBeginning < NewLoadTransaction.ModelCopy.LoadAmount) ||
-                    (NewLoadTransaction.ModelCopy.LoadAmount <= 0))
+                if (NewLoadTransaction.ModelCopy.AmountBeginning < NewLoadTransaction.ModelCopy.LoadAmount)
                 {
                     MessageBox.Show("You have insufficient load balance.");
                     return;

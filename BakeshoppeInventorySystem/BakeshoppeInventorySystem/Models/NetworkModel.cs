@@ -12,6 +12,7 @@ namespace BakeshoppeInventorySystem.Models
     {
         private IRepository _repository;
         private NetworkEditModel _editModel;
+        private string _textBoxFeePerTransaction;
 
         public NetworkModel(Network model, IRepository repository) : base(model, repository)
         {
@@ -37,7 +38,12 @@ namespace BakeshoppeInventorySystem.Models
         //The same for the Modules
         #region Methods
 
-
+        private bool CheckIfNumber()
+        {
+            double x;
+            var result = double.TryParse(TextBoxFeePerTransaction, out x);
+            return !result;
+        }
 
         #endregion
 
@@ -50,6 +56,17 @@ namespace BakeshoppeInventorySystem.Models
             {
                 _editModel = value;
                 RaisePropertyChanged(nameof(EditModel));
+            }
+        }
+
+        public string TextBoxFeePerTransaction
+        {
+            get { return _textBoxFeePerTransaction; }
+            set
+            {
+                _textBoxFeePerTransaction = value;
+                EditModel.HasChanges = true;
+                RaisePropertyChanged(nameof(TextBoxFeePerTransaction));
             }
         }
 
@@ -68,9 +85,15 @@ namespace BakeshoppeInventorySystem.Models
             if (EditModel == null) return;
             if (!EditModel.HasChanges) return;
 
+            if (CheckIfNumber())
+            {
+                MessageBox.Show("Invalid input for Fee per transaction field.", "Error", MessageBoxButton.OK);
+                return;
+            }
             try
             {
                 EditModel.ModelCopy.Name = EditModel.ModelCopy.Name.ToUpper();
+                EditModel.ModelCopy.FeePerTransaction = Convert.ToInt32(TextBoxFeePerTransaction);
                 _repository.Networks.Update(EditModel.ModelCopy);
                 Model = EditModel.ModelCopy;
                 MessageBox.Show("You have successfully updated the information.");
@@ -87,7 +110,7 @@ namespace BakeshoppeInventorySystem.Models
 
         private bool SaveEditCondition()
         {
-            return (EditModel != null) && EditModel.HasChanges & !EditModel.HasErrors;
+            return (EditModel != null) && EditModel.HasChanges;
         }
 
         #endregion

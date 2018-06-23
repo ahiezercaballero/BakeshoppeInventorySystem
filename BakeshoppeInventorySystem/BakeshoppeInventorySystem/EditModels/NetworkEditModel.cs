@@ -45,10 +45,7 @@ namespace BakeshoppeInventorySystem.EditModels
             get { return _ModelCopy.Name; }
             set
             {
-                string tmp = value;
-                string newValue = ValidateInputAndAddErrors(ref tmp, value, nameof(Name),
-                    () => string.IsNullOrWhiteSpace(value), "Name field is required.");
-                _ModelCopy.Name = newValue;
+                _ModelCopy.Name = value;
                 RaisePropertyChanged(nameof(Name));
             }
         }
@@ -58,16 +55,6 @@ namespace BakeshoppeInventorySystem.EditModels
             get { return _ModelCopy.FeePerTransaction; }
             set
             {
-                //double? tmp = value;
-                //string toStringValue = Convert.ToString(tmp);
-                //double? newValue = ValidateInputAndAddErrors(ref tmp, value, nameof(FeePerTransaction),
-                //    () =>
-                //    {
-                //        double x;
-                //        var result = double.TryParse(toStringValue, out x);
-                //        return !result;
-                //    }, "This field is required.");
-                //_ModelCopy.FeePerTransaction = newValue;
                 _ModelCopy.FeePerTransaction = value;
                 RaisePropertyChanged(nameof(FeePerTransaction));
             }

@@ -29,37 +29,48 @@
             <ColumnDefinition Width="auto" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-
-        <TextBlock Grid.Row="0"
-                Grid.ColumnSpan="3"
-                Style="{StaticResource header}"
-                Text="PRODUCTS" />
-
-
-        <Grid Grid.Row="1" Grid.ColumnSpan="3">
+        <Grid
+            Grid.Row="0"
+            Grid.ColumnSpan="3"
+            Margin="0,0,0,15">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto" />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <StackPanel
+            <TextBlock
                 Grid.Column="0"
+                Style="{StaticResource header}"
+                Text="PRODUCTS" />
+            <StackPanel
+                Grid.Column="1"
+                HorizontalAlignment="Right"
                 Orientation="Horizontal">
                 <TextBox Style="{StaticResource search}" Text="Search" />
                 <Button Content="C" />
                 <!--  This is a calendar. Replace this with a calendar icon  -->
             </StackPanel>
-            <ComboBox Grid.Column="1" 
-                      Style="{StaticResource mainSelectionCombobox}">
-                <ComboBoxItem IsSelected="True">ALL</ComboBoxItem>
-            </ComboBox>
-            <Button Grid.Column="2" 
-                    Content="Save Initial" Style="{StaticResource saveInitial}" />
-
         </Grid>
 
-        <DataGrid Grid.Row="2" 
-                  Grid.ColumnSpan="3">
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <ComboBox Grid.Column="0" Style="{StaticResource mainSelectionCombobox}">
+                <ComboBoxItem IsSelected="True">ALL</ComboBoxItem>
+            </ComboBox>
+            <StackPanel
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Button Content="New" />
+                <Button Content="Delete" />
+                <Button Content="Save Initial" Style="{StaticResource saveInitial}" />
+            </StackPanel>
+        </Grid>
+
+        <DataGrid Grid.Row="2" Grid.ColumnSpan="3">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" IsReadOnly="True" />
                 <DataGridTextColumn Header="Current Quantity" />
@@ -79,7 +90,7 @@
         </StackPanel>
 
         <!--  edit item details section  -->
-        <!--<Grid Grid.Row="4" Grid.Column="0">
+        <Grid Grid.Row="4" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition />
@@ -123,14 +134,20 @@
                 <Button Content="Save" />
                 <Button Content="Cancel" />
             </StackPanel>
-        </Grid>-->
+        </Grid>
+
+        <!--  vertical line divider  -->
+        <Grid
+            Grid.Row="4"
+            Grid.Column="1"
+            Style="{StaticResource verticalLine}" />
 
         <!--  re-stock section  -->
-        <Grid Grid.Row="4"
-              Grid.Column="0">
+        <Grid Grid.Row="4" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -146,10 +163,15 @@
                 Grid.Row="1"
                 Grid.Column="0"
                 Content="Quantity" />
-            <TextBox Grid.Row="1" 
-                     Grid.Column="1" />
+            <TextBox Grid.Row="1" Grid.Column="1" />
+            <DataGrid Grid.Row="2" Grid.ColumnSpan="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Date" />
+                    <DataGridTextColumn Header="Quantity" />
+                </DataGrid.Columns>
+            </DataGrid>
             <StackPanel
-                Grid.Row="2"
+                Grid.Row="3"
                 Grid.ColumnSpan="2"
                 Margin="0,10,0,0"
                 HorizontalAlignment="Right"
@@ -159,31 +181,6 @@
             </StackPanel>
         </Grid>
 
-        <!--  vertical line divider  -->
-        <Grid
-            Grid.Row="4"
-            Grid.Column="1"
-            Style="{StaticResource verticalLine}" />
-
-        <!--stock history section-->
-        <Grid Grid.Row="4"
-              Grid.Column="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <TextBlock
-                Grid.Row="0"
-                Style="{StaticResource subHeader}"
-                Text="RE-STOCK HISTORY" />
-            <DataGrid Grid.Row="1"
-                      Height="80">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Date" />
-                    <DataGridTextColumn Header="Quantity" />
-                </DataGrid.Columns>
-            </DataGrid>
-        </Grid>
 
     </Grid>
 </UserControl>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\
+C:\Users\admin\Desktop\Project\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\
 BakeshoppeInventorySystem
 none
 false
 DEBUG;TRACE
-C:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\App.xaml
-16149238050
+C:\Users\admin\Desktop\Project\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\App.xaml
+121537680632
 1-1402921744
-591481588227
-731435179314
-Resources\BakeshoppeResourceDictionary.xaml;MainWindow.xaml;Resources\Icons.xaml;ValueConverters\Converters.xaml;Views\Items\ItemsWindow.xaml;Views\Items\ListIngredientItemsUserControl.xaml;Views\Items\ListProductItemsUserControl.xaml;Views\Network\LoadTransactionWindow.xaml;Views\Network\AddNewNetworkWindow.xaml;Views\Network\ListNetworkUserControl.xaml;Views\Network\LoadTransactionUserControl.xaml;Views\Sales\ListSalesUserControl.xaml;Views\Stocks\AddNewIngredientWindow.xaml;Views\Stocks\AddNewProductWindow.xaml;Views\Stocks\ListIngredientsUserControl.xaml;Views\Stocks\ListStocksUserControl.xaml;
+55-1505487248
+73-2095862437
+Resources\BakeshoppeResourceDictionary.xaml;MainWindow.xaml;Resources\Icons.xaml;ValueConverters\Converters.xaml;Views\Network\LoadTransactionWindow.xaml;Views\Network\AddNewNetworkWindow.xaml;Views\Network\ListNetworkUserControl.xaml;Views\Network\LoadTransactionUserControl.xaml;Views\Sales\ListSalesUserControl.xaml;Views\Stocks\AddNewIngredientWindow.xaml;Views\Stocks\AddNewProductWindow.xaml;Views\Stocks\ListStocksUserControl.xaml;
 
 False
 
