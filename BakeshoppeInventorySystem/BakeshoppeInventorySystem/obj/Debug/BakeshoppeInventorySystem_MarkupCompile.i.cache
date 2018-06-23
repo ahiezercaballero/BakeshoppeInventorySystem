@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\obj\Debug\
 BakeshoppeInventorySystem
 none
 false
 DEBUG;TRACE
-C:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\App.xaml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\App.xaml
 16149238050
 1-1402921744
 63-1758671950
-731435179314
+73534488052
 Resources\BakeshoppeResourceDictionary.xaml;MainWindow.xaml;Resources\Icons.xaml;ValueConverters\Converters.xaml;Views\Items\ItemsWindow.xaml;Views\Items\ListIngredientItemsUserControl.xaml;Views\Items\ListProductItemsUserControl.xaml;Views\Network\LoadTransactionWindow.xaml;Views\Network\AddNewNetworkWindow.xaml;Views\Network\ListNetworkUserControl.xaml;Views\Network\LoadTransactionUserControl.xaml;Views\Sales\ListSalesUserControl.xaml;Views\Stocks\AddNewIngredientWindow.xaml;Views\Stocks\AddNewProductWindow.xaml;Views\Stocks\ListIngredientsUserControl.xaml;Views\Stocks\ListStocksUserControl.xaml;
 
-False
+True
 
