@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Input;
 using BakeshoppeInventorySystem.DataAccess;
 using BakeshoppeInventorySystem.Views.Network;
-using BakeshoppeInventorySystem.Views.Stocks;
+using BakeshoppeInventorySystem.Views.Items;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 
@@ -17,6 +17,7 @@ namespace BakeshoppeInventorySystem.Modules
     {
         private IRepository _repository;
         private LoadTransactionWindow _loadTransactionwindow;
+        private ItemsWindow _itemsWindow;
 
         public MainWindowModule(IRepository repository)
         {
@@ -26,12 +27,20 @@ namespace BakeshoppeInventorySystem.Modules
         #region Commands
 
         public ICommand OpenLoadTransacionWindow => new RelayCommand(OpenLoadTransactionProc);
+        public ICommand OpenItemsWindow => new RelayCommand(OpenItemsProc);
 
         private void OpenLoadTransactionProc()
         {
             _loadTransactionwindow = new LoadTransactionWindow();
             _loadTransactionwindow.Owner = Application.Current.MainWindow;
             _loadTransactionwindow.ShowDialog();
+        }
+
+        private void OpenItemsProc()
+        {
+            _itemsWindow = new ItemsWindow();
+            _itemsWindow.Owner = Application.Current.MainWindow;
+            _itemsWindow.ShowDialog();
         }
 
         #endregion

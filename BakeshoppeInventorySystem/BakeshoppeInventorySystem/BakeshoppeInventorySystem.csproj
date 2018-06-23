@@ -87,6 +87,15 @@
     </ApplicationDefinition>
     <Compile Include="Modules\MainWindowModule.cs" />
     <Compile Include="ValueConverters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Views\Items\ItemsWindow.xaml.cs">
+      <DependentUpon>ItemsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Items\ListIngredientItemsUserControl.xaml.cs">
+      <DependentUpon>ListIngredientItemsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Items\ListProductItemsUserControl.xaml.cs">
+      <DependentUpon>ListProductItemsUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Network\LoadTransactionWindow.xaml.cs">
       <DependentUpon>LoadTransactionWindow.xaml</DependentUpon>
     </Compile>
@@ -107,6 +116,9 @@
     </Compile>
     <Compile Include="Views\Stocks\AddNewProductWindow.xaml.cs">
       <DependentUpon>AddNewProductWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Stocks\ListIngredientsUserControl.xaml.cs">
+      <DependentUpon>ListIngredientsUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Stocks\ListStocksUserControl.xaml.cs">
       <DependentUpon>ListStocksUserControl.xaml</DependentUpon>
@@ -153,6 +165,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Items\ItemsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Items\ListIngredientItemsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Items\ListProductItemsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Network\LoadTransactionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -178,6 +202,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Stocks\AddNewProductWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Stocks\ListIngredientsUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

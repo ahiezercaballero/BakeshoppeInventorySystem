@@ -28,8 +28,10 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+        <Grid Grid.Row="0" Grid.ColumnSpan="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition Width="auto" />
@@ -44,22 +46,42 @@
                 BorderBrush="Black"
                 Header="MISCELLANEOUS">
                 <StackPanel Orientation="Horizontal">
-                    <Button Content="Reports" />
                     <Button Content="Load" Command="{Binding Path=OpenLoadTransacionWindow}"/>
+                    <Button Content="Item List" Command="{Binding Path=OpenItemsWindow}"/>
+                    <Button Content="Reports" />
+
                 </StackPanel>
             </GroupBox>
         </Grid>
         <Grid
             Grid.Row="1"
-            Grid.ColumnSpan="3"
+            Grid.ColumnSpan="4"
             Style="{StaticResource horizontalLine}" />
+        
+        <!--ingredient inventory section-->
         <Grid
             Grid.Row="2"
             Grid.Column="0"
-            Margin="0,0,40,0">
+            Margin="0,0,20,0">
+            <stocks:ListIngredientsUserControl/>
+        </Grid>
+        
+        <!--product inventory section-->
+        <Grid
+            Grid.Row="2"
+            Grid.Column="1">
             <stocks:ListStocksUserControl />
         </Grid>
-        <Grid Grid.Row="2" Grid.Column="1">
+        
+        <!--  vertical line divider  -->
+        <Grid
+            Grid.Row="4"
+            Grid.Column="2"
+            Style="{StaticResource verticalLine}" />
+        
+        <!--product sales section-->
+        <Grid Grid.Row="3" 
+              Grid.Column="3">
             <sales:ListSalesUserControl />
         </Grid>
     </Grid>

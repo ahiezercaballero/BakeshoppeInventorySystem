@@ -1,4 +1,5 @@
-﻿using BakeshoppeInventorySystem.DataAccess;
+﻿using System.Collections.ObjectModel;
+using BakeshoppeInventorySystem.DataAccess;
 using BakeshoppeInventorySystem.DataAccess.EF;
 
 namespace BakeshoppeInventorySystem.Models
@@ -32,13 +33,9 @@ namespace BakeshoppeInventorySystem.Models
         #region Methods
 
 
-
         #endregion
 
-
         #region Properties
-
-
 
         #endregion
 

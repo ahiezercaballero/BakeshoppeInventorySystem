@@ -1,14 +1,18 @@
 ﻿
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\App.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Resources\BakeshoppeResourceDictionary.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\MainWindow.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\ValueConverters\Converters.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Network\LoadTransactionWindow.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Network\AddNewNetworkWindow.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Network\ListNetworkUserControl.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Network\LoadTransactionUserControl.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Sales\ListSalesUserControl.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Stocks\AddNewIngredientWindow.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Stocks\AddNewProductWindow.xaml;;
-FC:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Stocks\ListStocksUserControl.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\App.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Resources\BakeshoppeResourceDictionary.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\MainWindow.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\ValueConverters\Converters.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Items\ItemsWindow.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Items\ListIngredientItemsUserControl.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Items\ListProductItemsUserControl.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Network\LoadTransactionWindow.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Network\AddNewNetworkWindow.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Network\ListNetworkUserControl.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Network\LoadTransactionUserControl.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Sales\ListSalesUserControl.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Stocks\AddNewIngredientWindow.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Stocks\AddNewProductWindow.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Stocks\ListIngredientsUserControl.xaml;;
+FC:\Users\admin\Desktop\Testing\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\Views\Stocks\ListStocksUserControl.xaml;;
 

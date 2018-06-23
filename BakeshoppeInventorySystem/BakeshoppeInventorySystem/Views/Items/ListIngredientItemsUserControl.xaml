@@ -1,0 +1,141 @@
+﻿<UserControl
+    x:Class="BakeshoppeInventorySystem.Views.Items.ListIngredientItemsUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BakeshoppeInventorySystem.Views.Items"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="800"
+    d:DesignWidth="600"
+    DataContext="{Binding Path=IngredientModule, Source={StaticResource Locator}}"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+
+        <TextBlock
+            Grid.Row="0"
+            Style="{StaticResource header}"
+            Text="LIST OF INGREDIENTS" />
+        <Grid Grid.Row="1" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                <TextBox Style="{StaticResource search}" Text="Search" />
+                <Button Content="C" />
+                <!--  This is a calendar. Replace this with a calendar icon  -->
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="1"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal">
+                <Button Command="{Binding Path=AddNetworkWindow}" Content="Add" />
+                <!--  change this to icon - Add  -->
+                <Button Command="{Binding Path=DeleteNetworkCommand}" Content="Delete" />
+                <!--  change this to icon - Delete  -->
+            </StackPanel>
+
+        </Grid>
+
+
+        <!--
+            list of ingredients section
+        -->
+        <DataGrid
+            Grid.Row="2"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding Path=IngredientList}"
+            SelectedIndex="0"
+            SelectedItem="{Binding Path=SelectedIngredientModel}">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Binding="{Binding Path=Model.Name}"
+                    Header="Name"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Binding="{Binding Path=Unit.Symbol}"
+                    Header="Unit"
+                    IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+        <!--
+            edit network details section
+        -->
+        <Grid
+            Grid.Row="3"
+            Grid.Column="0"
+            DataContext="{Binding Path=IngredientModule.SelectedIngredientModel.EditModel, Source={StaticResource Locator}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                Style="{StaticResource subHeader}"
+                Text="EDIT INGREDIENT DETAILS" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Content="Name" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Content="Unit" />
+            <TextBox
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="{Binding Path=UnitId, UpdateSourceTrigger=PropertyChanged}" />
+            <Grid
+                Grid.Row="2"
+                Grid.Column="1"
+                DataContext="{Binding Path=IngredientModule, Source={StaticResource Locator}}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <ComboBox
+                    Grid.Column="0"
+                    ItemsSource="{Binding Path=IngredientModule.UnitList, Source={StaticResource Locator}}"
+                    SelectedIndex="{Binding Path=SelectedIngredientModel.IndexUnit}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Model.Symbol}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Button Grid.Column="1" Content="+" />
+            </Grid>
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="0,10,0,0"
+                HorizontalAlignment="Right"
+                Command="{Binding Path=NetworkModule.SelectedNetworkModel.SaveEditCommand, Source={StaticResource Locator}}"
+                Content="Save" />
+
+        </Grid>
+    </Grid>
+
+</UserControl>
