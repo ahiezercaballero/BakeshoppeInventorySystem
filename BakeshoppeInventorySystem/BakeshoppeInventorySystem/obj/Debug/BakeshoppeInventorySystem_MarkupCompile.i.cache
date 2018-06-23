@@ -10,19 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\admin\Documents\Visual Studio 2015\Projects\BakeshoppeInventorySystem\BakeshoppeInventorySystem\BakeshoppeInventorySystem\App.xaml
-<<<<<<< HEAD
 121537680632
 1-1402921744
 59-450780129
 73534488052
 Resources\BakeshoppeResourceDictionary.xaml;MainWindow.xaml;Resources\Icons.xaml;ValueConverters\Converters.xaml;Views\Network\LoadTransactionWindow.xaml;Views\Network\AddNewNetworkWindow.xaml;Views\Network\ListNetworkUserControl.xaml;Views\Network\LoadTransactionUserControl.xaml;Views\Sales\ListSalesUserControl.xaml;Views\Stocks\AddNewIngredientWindow.xaml;Views\Stocks\AddNewProductWindow.xaml;Views\Stocks\ListStocksUserControl.xaml;
-=======
-16149238050
-1-1402921744
-63-1758671950
-73534488052
-Resources\BakeshoppeResourceDictionary.xaml;MainWindow.xaml;Resources\Icons.xaml;ValueConverters\Converters.xaml;Views\Items\ItemsWindow.xaml;Views\Items\ListIngredientItemsUserControl.xaml;Views\Items\ListProductItemsUserControl.xaml;Views\Network\LoadTransactionWindow.xaml;Views\Network\AddNewNetworkWindow.xaml;Views\Network\ListNetworkUserControl.xaml;Views\Network\LoadTransactionUserControl.xaml;Views\Sales\ListSalesUserControl.xaml;Views\Stocks\AddNewIngredientWindow.xaml;Views\Stocks\AddNewProductWindow.xaml;Views\Stocks\ListIngredientsUserControl.xaml;Views\Stocks\ListStocksUserControl.xaml;
->>>>>>> products
 
 True
 
